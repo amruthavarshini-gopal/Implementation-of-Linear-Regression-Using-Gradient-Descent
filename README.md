@@ -12,13 +12,25 @@ To write a program to predict the profit of a city using the linear regression m
 
 ## Algorithm:
 
-1. Import all the required packages.
+1.Import necessary libraries for numerical operations, data handling, and preprocessing.
 
-2. Display the output values using graphical representation tools as scatter plot and graph.
+2.Load the startup dataset (50_Startups.csv) using pandas.
 
-3. Predict the values using predict() function.
+3.Extract feature matrix X and target vector y from the dataset.
 
-4. Display the predicted values and end the program.
+4.Convert feature and target values to float and reshape if necessary.
+
+5.Standardize X and y using StandardScaler.
+
+6.Add a column of ones to X to account for the bias (intercept) term.
+
+7.Initialize model parameters (theta) to zeros.
+
+8.Perform gradient descent to update theta by computing predictions and adjusting for error.
+
+9.Input a new data point, scale it, and add the intercept term.
+
+10.Predict the output using learned theta, then inverse-transform it to get the final result.
 
 ## Program:
 ```
@@ -69,17 +81,31 @@ print(f"Predicted value: {pre}")
 ```
 
 ## Output:
-![Screenshot 2025-03-10 105815](https://github.com/user-attachments/assets/5fcb5f42-05d0-40d2-9865-b9f238fe8220)
-![Screenshot 2025-03-10 105959](https://github.com/user-attachments/assets/17ab154a-54ea-4f14-ba87-4a85b2260e72)
-![Screenshot 2025-03-10 110033](https://github.com/user-attachments/assets/49b11261-b50d-41d2-b5c0-3c4a4c061ba5)
-![Screenshot 2025-03-10 110054](https://github.com/user-attachments/assets/640693a4-2f4f-4472-8865-74b50d006418)
-![Screenshot 2025-03-10 110112](https://github.com/user-attachments/assets/4b20864a-7eb9-4e6b-8ab7-ad632371c869)
-![Screenshot 2025-03-10 110132](https://github.com/user-attachments/assets/7c08bf08-3f84-49d1-889e-9584f2e04545)
-![Screenshot 2025-03-10 110153](https://github.com/user-attachments/assets/155175a6-10b8-4737-80f0-81d24da6f694)
-![Screenshot 2025-03-10 110216](https://github.com/user-attachments/assets/73df3933-5b54-4c88-aa14-5e8085720fc5)
-![Screenshot 2025-03-10 110240](https://github.com/user-attachments/assets/3d57a195-a4ef-43ef-850b-a54316a0327e)
-![Screenshot 2025-03-10 110256](https://github.com/user-attachments/assets/1170a9a2-f2ef-4042-8d01-6f7d5be1142c)
-![Screenshot 2025-03-10 110314](https://github.com/user-attachments/assets/d140cd1b-afce-4d7f-90c1-a77da03f8ee3)
+### Dataset values
+![Screenshot 2025-04-28 141503](https://github.com/user-attachments/assets/0b5b19ca-cf54-4540-8692-d5a982e899f1)
+
+### X Values
+![Screenshot 2025-04-28 141641](https://github.com/user-attachments/assets/530210ac-bafe-4216-8907-a5aa361132f3)
+
+![Screenshot 2025-04-28 141736](https://github.com/user-attachments/assets/d321af4a-9317-4a1e-8d31-0d769be389cc)
+
+### Y Values
+![Screenshot 2025-04-28 141918](https://github.com/user-attachments/assets/d8aa3da6-a63d-426a-a0a7-f1ec36941199)
+
+![Screenshot 2025-04-28 141943](https://github.com/user-attachments/assets/3f7cc19a-4d9d-4902-babe-61bb37e8ecb5)
+
+### X1_scaled Values
+![Screenshot 2025-04-28 142153](https://github.com/user-attachments/assets/71152c63-89f7-4676-b392-8ce960b9d739)
+
+![Screenshot 2025-04-28 142205](https://github.com/user-attachments/assets/db7b0eb1-812a-46cf-ab32-e6afc2771592)
+
+### Y1_scaled Values
+![Screenshot 2025-04-28 142217](https://github.com/user-attachments/assets/05c7931a-7e1a-4b6d-950e-0fa311fe58fb)
+
+![Screenshot 2025-04-28 142230](https://github.com/user-attachments/assets/4e3f7c66-71fd-4de9-af0c-11989c72bbbb)
+
+### Predicted Values
+![Screenshot 2025-04-28 142241](https://github.com/user-attachments/assets/cfbd0a36-69a4-4e8a-b16a-211846953566)
 
 ## Result:
 
